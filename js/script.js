@@ -14,23 +14,21 @@ let age18 = 18;
 let age65 = 65;
 let priceKm = 0.21;
 let ticketPrice = km * priceKm;
+ticketPrice = ticketPrice.toFixed(2);
 let ticketPrice20 = ticketPrice - ((ticketPrice / 100) * 20);
+ticketPrice20 = ticketPrice20.toFixed(2);
 let ticketPrice40 = ticketPrice - ((ticketPrice / 100) * 40);
-let 
+ticketPrice40 = ticketPrice40.toFixed(2);
+
 
 if (age < age18) {
-    document.write(ticketPrice20, {
-        maxDecimals: 2,
-    });
+    document.write(ticketPrice20);
 } else if (age > age65) {
-    document.write(ticketPrice40, {
-        maxDecimals: 2,
-    });
+    document.write(ticketPrice40);
 } else {
-    document.write(ticketPrice, {
-        maxDecimals: 2,
-    });
+    document.write(ticketPrice);
 }
+
 
 
 
