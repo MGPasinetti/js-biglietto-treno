@@ -7,19 +7,28 @@ va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 */
 
-let age1 = prompt (`Età 1:`)
-let age2 = prompt (`Età 2:`)
-let outputEle = document.getElementById(`my-output`);
+let km = prompt (`Chilometri che si vogliono percorrere:`);
+let age = prompt (`Età del passeggero`);
 
-if (age1 > age2) {
-    outputEle.innerHTML = `Età 1 maggiore`
-} else if (age1 < age2) {
-    outputEle.innerHTML = `Età 2 maggiore`
-} else {
-    outputEle.innerHTML = `Età uguali`
-}
+let age18 = 18;
+let age65 = 65;
+let priceKm = 0.21;
+let ticketPrice = km * priceKm;
+document.write(ticketPrice);
 
+// let outputEle = document.getElementById(`my-output`);
 
+// if (age >= age18) {
+//     alert ("tickePrice")
+// } else if (age <= age65) {
+//     outputEle.innerHTML = console.log (`ticketPrice`);
+// } else {
+//     outputEle.innerHTML = console.log (`ticketPrice`);
+// }
+
+// console.log (
+//     `ticketPrice`
+// );
 
 
 
