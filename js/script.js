@@ -14,17 +14,18 @@ let age18 = 18;
 let age65 = 65;
 let priceKm = 0.21;
 let ticketPrice = km * priceKm;
-document.write(ticketPrice);
+let ticketPrice20 = ticketPrice - ((ticketPrice / 100) * 20);
+let ticketPrice40 = ticketPrice - ((ticketPrice / 100) * 40);
 
 // let outputEle = document.getElementById(`my-output`);
 
-// if (age >= age18) {
-//     alert ("tickePrice")
-// } else if (age <= age65) {
-//     outputEle.innerHTML = console.log (`ticketPrice`);
-// } else {
-//     outputEle.innerHTML = console.log (`ticketPrice`);
-// }
+if (age < age18) {
+    document.write(ticketPrice20);
+} else if (age > age65) {
+    document.write(ticketPrice40);
+} else {
+    document.write(ticketPrice);
+}
 
 // console.log (
 //     `ticketPrice`
